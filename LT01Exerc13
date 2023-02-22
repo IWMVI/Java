@@ -1,0 +1,21 @@
+// Receba uma quantidade de alimento em quilos. Calcule e mostre quantos dias durará esse alimento, sabendo que
+// a pessoa consome 50g ao dia.
+
+import javax.swing.JOptionPane;
+
+public class LT01EXERC13 {
+	public static void main (String [] arg) {
+		
+		int kg, dias, g;
+		
+		kg = Integer.parseInt(JOptionPane.showInputDialog("Quantos Kg de alimento foi recebido?"));
+		
+		kg = kg * 1000;
+		g = 50;
+		
+		dias = kg / g;
+		
+		System.out.print("A comida durará: " +dias+ " dias.");
+		
+	}
+}

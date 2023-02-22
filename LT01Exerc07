@@ -1,0 +1,18 @@
+// Receba os valores do comprimento, largura e altura de um paralelepípedo. Calcule e mostre seu volume.
+
+import javax.swing.JOptionPane;
+
+public class LT01EXERC07 {
+	public static void main (String [] arg) {
+		
+		int v,b,h,l;
+		
+		b = Integer.parseInt (JOptionPane.showInputDialog ("Qual o comprimento? "));
+		h = Integer.parseInt (JOptionPane.showInputDialog ("Qual a altura? "));
+		l = Integer.parseInt (JOptionPane.showInputDialog ("Qual é o lado? "));
+		
+		v = (b*h*l);
+		
+		System.out.print("O volume do paralelepípedo é: " +v);
+	}
+}

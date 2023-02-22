@@ -1,0 +1,19 @@
+// Receba o raio da circunferência, calcule e mostre o seu comprimento.
+
+import javax.swing.JOptionPane;
+
+public class LT01EXERC11 {
+	public static void main (String []arg) {
+		
+		double c ,pi;
+		int r;
+		
+		r = Integer.parseInt (JOptionPane.showInputDialog("Qual é o raio?"));
+		
+		pi = 3.14;
+		c = 2*pi*(r*r);
+		
+		
+		System.out.print("O comprimento é: " +c);
+	}
+}

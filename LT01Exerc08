@@ -1,0 +1,20 @@
+// Receba o valor de um depósito em poupança, calcule e mostre o valor após 1 mês de aplicação
+// sabendo que rende 1.3% a.m.
+
+import javax.swing.JOptionPane;
+
+public class LT01EXERC08 {
+	public static void main (String [] arg) {
+		
+		double c,j;
+		int t;
+		
+		c = Double.parseDouble(JOptionPane.showInputDialog("Qual é o valor que será aplicado? "));
+		
+		t = 1;
+		j = (1.3*c*t);
+		
+		System.out.print("O valor da aplicação após " +t+ " mês(es) será R$ " +j);
+			
+	}
+}

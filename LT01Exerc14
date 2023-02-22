@@ -1,0 +1,17 @@
+// Receba 2 ângulos de um triângulo, calcule e mostre o valor do 3º ângulo.
+
+import javax.swing.JOptionPane;
+
+public class LT01EXERC14 {
+	public static void main (String [] arg) {
+		
+		int a,b,c;
+		
+		a = Integer.parseInt(JOptionPane.showInputDialog("Qual o valor do 1º ângulo? "));
+		b = Integer.parseInt(JOptionPane.showInputDialog("Qual o valor do 2º ângulo? "));
+		
+		c = 180 - (a+b);
+		
+		System.out.print("O valor do 3º ângulo é: " +c+ "º");
+	}
+}

@@ -1,0 +1,19 @@
+// Receba os valores em X e Y. Efetue a troca de seus valores e mostre seus conteúdos.
+
+import javax.swing.JOptionPane;
+
+public class LT01EXERC06 {
+	public static void main (String [] arg) {
+		
+		int x,y,z;
+		
+		x = Integer.parseInt (JOptionPane.showInputDialog("Qual o valor de X?"));
+		y = Integer.parseInt(JOptionPane.showInputDialog("Qual é o valor de Y?"));
+		
+		z=x;
+		x=y;
+		
+		System.out.println ("O valor de X é: " +x);
+		System.out.println ("O valor de Y é: " +z);
+	}
+}

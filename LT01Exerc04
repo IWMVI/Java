@@ -1,0 +1,16 @@
+// Receba a temperatura em graus Celsius. Calcule e mostre a temperatura convertida em Fahrenheit.
+
+import javax.swing.JOptionPane;
+
+public class LT01EXERC04 {
+	public static void main (String [] arg) {
+		
+		float c, f;
+		
+		c = Float.parseFloat (JOptionPane.showInputDialog("Qual é a temperatura em ºC? "));
+		
+		f=(9*c+160)/5;
+		
+		System.out.print ("A temperatura em ºF é: " +f);
+	}
+}

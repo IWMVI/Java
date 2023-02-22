@@ -1,0 +1,17 @@
+//Receba o salário de um funcionário e mostre o novo salário com reajuste de 15%.
+
+import javax.swing.JOptionPane;
+
+public class LT01EXERC02 {
+	public static void main (String [] arg) {
+		
+		Double salario, aumento;
+		
+		salario = Double.parseDouble(JOptionPane.showInputDialog("Qual é o seu salário atual?"));
+		
+		aumento = salario * 1.15;
+		
+		System.out.print("O salário após o aumento será de R$ " +aumento);
+	}
+
+}

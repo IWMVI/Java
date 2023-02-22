@@ -1,0 +1,17 @@
+// Coletar o valor de um lado de um quadrado e mostrar sua área.
+
+import javax.swing.JOptionPane;
+
+public class LT01EXERC01 {
+	public static void main (String [] arg) {
+		
+		int a, area;
+		
+		a = Integer.parseInt (JOptionPane.showInputDialog ("Qual o valor do lado? "));
+		
+		area = a*a;
+		
+		System.out.print("A area total e: " +area);
+		
+	}
+}

@@ -1,0 +1,18 @@
+// Receba o ano de nascimento e o ano atual. Calcule e mostre a idade após X anos.
+
+import javax.swing.JOptionPane;
+
+public class LT01EXERC12 {
+	public static void main (String [] arg) {
+		
+		int ano_atual, ano_nascimento, x_ano, idade;
+		
+		ano_atual = Integer.parseInt (JOptionPane.showInputDialog("Qual o ano atual?"));
+		ano_nascimento = Integer.parseInt(JOptionPane.showInputDialog("Qual o ano de nascimento?"));
+		x_ano = Integer.parseInt(JOptionPane.showInputDialog("Quer saber sua idade após quantos anos?"));
+		
+		idade = ano_atual - ano_nascimento + x_ano;
+		
+		System.out.print ("Sua idade daqui a " +x_ano+ " anos será: " +idade);
+	}
+}
