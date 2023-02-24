@@ -3,7 +3,7 @@
 
 import javax.swing.JOptionPane;
 
-public class LT01EXERC13 {
+public class Main {
 	public static void main (String [] arg) {
 		
 		int kg, dias, g;

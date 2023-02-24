@@ -2,7 +2,7 @@
 
 import javax.swing.JOptionPane;
 
-public class LT01EXERC03 {
+public class Main {
 	public static void main (String [] arg) {
 		
 		float base, area, altura;

@@ -1,0 +1,20 @@
+// Receba os valores de 2 catetos de um triângulo retângulo. Calcule e mostre a hipotenusa.
+
+import javax.swing.JOptionPane;
+
+public class Main {
+	public static void main (String [] arg) {
+		
+		int a, b, c; 
+		double ans;
+		
+		a = Integer.parseInt(JOptionPane.showInputDialog("Qual o valor do cateto A? "));
+		b = Integer.parseInt(JOptionPane.showInputDialog ("Qual o valor do cateto B? "));
+		
+		c = (a*a)+(b*b);
+		ans = Math.sqrt (c);
+		
+		System.out.println ("O valor da hipotenusa é: " +ans);
+	}
+	
+}

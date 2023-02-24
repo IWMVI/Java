@@ -1,0 +1,39 @@
+// Receba 2 valores reais. Calcule e mostre o maior deles.
+
+import javax.swing.JOptionPane;
+
+public class Main {
+	public static void main (String [] arg) {
+		
+		float a, b, adc, mul, sub, div, mod;
+		
+		a = Float.parseFloat(JOptionPane.showInputDialog("Digite o primeiro valor: "));
+		b = Float.parseFloat(JOptionPane.showInputDialog("Digite o segundo valor: "));
+		
+		if (a>b) {
+			
+			adc = a+b;
+			mul = a*b;
+			sub = a-b;
+			div = a/b;
+			mod = a%b;
+			System.out.println ("O maior número digitado foi: "+a);
+		}
+		else {
+			
+			adc = b+a;
+			mul = b*a;
+			sub = b-a;
+			div = b/a;
+			mod = b%a;
+			System.out.println ("O maior número digitado foi: "+b);
+		}
+		
+		System.out.println ("O resultado da soma entre A e B é: " +adc);
+		System.out.println ("O resultado da subtração entre A e B é: " +sub);
+		System.out.println ("O resultado da multiplicação entre A e B é: " +mul);
+		System.out.println ("O resultado da divisão entre A e B é: " +div);
+		System.out.println ("O resultado do resto da divisão entre A e B é: " +mod);
+		
+	}
+}

@@ -2,7 +2,7 @@
 
 import javax.swing.JOptionPane;
 
-public class LT01EXERC10 {
+public class Main {
 	public static void main (String [] arg) {
 		int a,b,r;
 		

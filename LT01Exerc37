@@ -1,0 +1,26 @@
+// Receba a quantidade de horas trabalhadas, o valor por hora, o percentual de desconto, e o número de dependentes.
+// Calcule o salário que serão as horas trabalhadas * o valor por hora. Calcule o salário líquido (= Salario Bruto - Desconto)
+// A cada dependente será acrescido R$100,00 no salário líquido. Exiba o salário a ser recebido.
+
+import javax.swing.JOptionPane;
+
+public class LT01EXERC16 {
+	public static void main (String [] arg) {
+		
+	int horas, dependentes, valor_hora, desconto, salario;
+	
+	horas = Integer.parseInt (JOptionPane.showInputDialog ("Quantas horas foram trabalhadas? "));
+	dependentes = Integer.parseInt (JOptionPane.showInputDialog ("Há quantos dependentes? "));
+	valor_hora = Integer.parseInt (JOptionPane.showInputDialog ("Qual o valor da hora trabalhada? "));
+	desconto = Integer.parseInt (JOptionPane.showInputDialog ("Qual o percentual de desconto? "));
+	
+	salario = (horas * valor_hora) - (desconto / 100 );
+	
+	if (dependentes >= 1){
+		salario = salario + (100 * dependentes);
+	}
+	
+	System.out.println ("O salário que deverá ser recebido é de R$: " +salario);
+	
+	}
+}

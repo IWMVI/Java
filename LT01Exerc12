@@ -2,7 +2,7 @@
 
 import javax.swing.JOptionPane;
 
-public class LT01EXERC12 {
+public class Main {
 	public static void main (String [] arg) {
 		
 		int ano_atual, ano_nascimento, x_ano, idade;

@@ -1,0 +1,19 @@
+// Receba um número, calcule e mostre o resultado da tabuada desse número.
+
+import javax.swing.JOptionPane;
+
+public class Main {
+    public static void main (String [] arg){
+     
+        int num, cont, m;
+        
+        num = Integer.parseInt(JOptionPane.showInputDialog ("Digite um valor: "));
+        
+        for (cont = 0 ; cont <= 10; cont ++){
+        
+            m = cont * num;
+            System.out.println ("O numero " +num+ " * " +cont+ " e: " +m);
+        }
+        
+    }
+}

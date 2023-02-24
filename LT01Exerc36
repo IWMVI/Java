@@ -1,0 +1,19 @@
+import javax.swing.JOptionPane;
+
+public class Main {
+    public static void main (String [] arg){
+    
+    int  cta= 1, n=0;
+    double ans=0.0;
+        
+    n = Integer.parseInt (JOptionPane.showInputDialog ("Digite um valor: "));
+        
+    while ((cta <= n)){
+        
+    ans = (ans+(1/(double)cta));
+    cta = (cta+1);
+    
+    }
+    System.out.println ("O resultado é: " +ans);
+    }
+}
